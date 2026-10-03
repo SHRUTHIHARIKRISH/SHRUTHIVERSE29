@@ -183,3 +183,7 @@ function initContactForm() {
     }, 5000);
   }
 }
+
+/* ---- Resume Buttons ---- */
+/* Resume preview and download use native <a href="assets/Shruthi_TH_Resume.pdf">
+   links in the HTML — no JavaScript needed for this functionality. */

@@ -5,8 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
-    content="ShruthiVerse — Personal portfolio of an aspiring frontend developer passionate about building responsive, user-friendly websites." />
-  <title>ShruthiVerse — Designing the Future with Code</title>
+    content="ShruthiVerse — Portfolio of Shruthi Harikrishnan, 4th-year B.Tech CSE (Data Science & AI) student and Full Stack Web / Software Developer. Designing the Future with Code." />
+  <meta name="keywords" content="Shruthi Harikrishnan, ShruthiVerse, Full Stack Developer, Software Engineer, B.Tech CSE, Data Science, AI, Web Development, Portfolio" />
+  <meta name="author" content="Shruthi Harikrishnan" />
+  <title>ShruthiVerse — Designing the Future with Code | Full Stack & Software Developer</title>
   <link rel="stylesheet" href="css/style.css" />
   <!-- Supabase SDK -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
@@ -25,11 +27,20 @@
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certifications">Certifications</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li>
-          <button class="nav-auth-btn" id="authBtn" onclick="handleAuth()">
-            Sign In
-          </button>
+        <li class="nav-actions">
+          <a href="assets/Shruthi_TH_Resume.pdf" target="_blank" rel="noopener noreferrer" class="nav-resume-btn" id="navResumeBtn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            <span>Resume</span>
+          </a>
         </li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
@@ -40,27 +51,65 @@
     </div>
   </nav>
 
-  <!-- ===================== HERO SECTION ===================== -->
+    <!-- ===================== HERO SECTION ===================== -->
   <section class="hero" id="hero">
     <div class="hero-content fade-in">
-      <span class="hero-badge">✦ Open to Opportunities</span>
-      <p class="hero-welcome">WELCOME To</p>
-      <h1 class="hero-title">ShruthiVerse</h1>
-      <p class="hero-tagline">Designing the Future with Code</p>
+      <span class="hero-badge">✦ Open to Full Stack &amp; Software Roles</span>
+      <p class="hero-welcome">Hi, I'm</p>
+      <h1 class="hero-title">Shruthi</h1>
+      <p class="hero-tagline">Full Stack Web Developer</p>
       <p class="hero-description">
-        Enthusiastic frontend developer passionate about building responsive and user-friendly websites. Turning
-        creative ideas into clean, functional digital experiences.
+        B.Tech CSE (Data Science &amp; AI) student passionate about building
+        <strong>responsive web applications</strong>, <strong>practical software solutions</strong>,
+        and user-focused digital experiences.
       </p>
+
+      <p class="hero-supporting">Building practical solutions with code, design, and emerging technologies.</p>
+
+
+
       <div class="hero-buttons">
-        <a href="#projects" class="btn-primary">
-          <span>View My Projects</span>
+        <a href="#projects" class="btn-primary" id="heroViewProjectsBtn">
+          <span>View Projects</span>
           <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
             stroke-linejoin="round" viewBox="0 0 24 24">
             <path d="M5 12h14M12 5l7 7-7 7" />
           </svg>
         </a>
-        <a href="#contact" class="btn-secondary">
-          <span>Get In Touch</span>
+        <a href="assets/Shruthi_TH_Resume.pdf" download="Shruthi_TH_Resume.pdf" class="btn-secondary" id="heroResumeBtn">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="12" y1="18" x2="12" y2="12"></line>
+            <line x1="9" y1="15" x2="15" y2="15"></line>
+          </svg>
+          <span>Download Resume</span>
+        </a>
+      </div>
+
+      <!-- Social Links -->
+      <div class="hero-social">
+        <a href="https://github.com/SHRUTHIHARIKRISH" target="_blank" rel="noopener noreferrer"
+          class="hero-social-link" aria-label="GitHub" title="GitHub: SHRUTHIHARIKRISH" id="heroGithubLink">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          <span>GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/shruthi-harikrishnan29" target="_blank" rel="noopener noreferrer"
+          class="hero-social-link" aria-label="LinkedIn" title="LinkedIn: Shruthi Harikrishnan" id="heroLinkedinLink">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="mailto:shrutiharikrishnan29@gmail.com"
+          class="hero-social-link" aria-label="Email" title="Email Shruthi" id="heroEmailLink">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="4" width="20" height="16" rx="2"/>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+          </svg>
+          <span>Email</span>
         </a>
       </div>
     </div>
@@ -75,13 +124,19 @@
     <div class="container">
       <div class="section-header fade-in">
         <h2 class="section-title">About Me</h2>
-        <p class="section-subtitle">A passionate learner building the future, one line of code at a time.</p>
+        <p class="section-subtitle">A software development student who enjoys turning ideas into functional, user-friendly applications.</p>
       </div>
       <div class="about-grid">
         <div class="about-image-wrapper fade-in-left">
           <div class="about-image-container">
             <div class="about-avatar">
-              <span class="about-avatar-icon">👩‍💻</span>
+              <div class="cosmic-avatar">
+                <span class="avatar-orbit"></span>
+                <span class="avatar-core">👩‍💻</span>
+                <div class="avatar-tech-badge">
+                  <span>CSE &bull; 2027</span>
+                </div>
+              </div>
             </div>
           </div>
           <div class="dot dot-1"></div>
@@ -91,31 +146,110 @@
         <div class="about-content fade-in-right">
           <h3>Hi, I'm <span class="highlight">Shruthi</span> 👋</h3>
           <p>
-            I'm a dedicated student and aspiring frontend developer with a strong passion for creating beautiful,
-            responsive websites. My journey in web development started with curiosity and has grown into a consistent
-            habit of learning and building.
+            I am a 4th-year <strong>B.Tech Computer Science &amp; Engineering</strong> student specializing in
+            <strong>Data Science &amp; AI</strong>, with a strong focus on <strong>full-stack web development</strong>
+            and software development. I work with <strong>HTML, CSS, JavaScript, React, Python, Java</strong> and <strong>SQL</strong>
+            to build responsive websites, practical web apps, and UI/UX-driven interfaces.
           </p>
           <p>
-            I believe in the power of clean code, thoughtful design, and continuous improvement. Every project I take on
-            is an opportunity to sharpen my problem-solving skills and push my creative boundaries.
-          </p>
-          <p>
-            When I'm not coding, I'm exploring new technologies, participating in hackathons, and looking for ways to
-            make a meaningful impact through technology.
+            I have built projects ranging from websites and browser extensions to hackathon prototypes, and I enjoy
+            the process of taking an idea from concept to a working, user-friendly product. I am currently
+            preparing for <strong>software development roles</strong> and <strong>MNC fresher opportunities</strong>,
+            and I am eager to keep learning and contributing to real-world engineering teams.
           </p>
           <div class="about-stats">
+            <div class="stat-item">
+              <div class="stat-number">4th Yr</div>
+              <div class="stat-label">B.Tech CSE (DS & AI)</div>
+            </div>
             <div class="stat-item">
               <div class="stat-number">6+</div>
               <div class="stat-label">Projects Built</div>
             </div>
             <div class="stat-item">
-              <div class="stat-number">5+</div>
-              <div class="stat-label">Skills</div>
+              <div class="stat-number">6+</div>
+              <div class="stat-label">Technologies Used</div>
             </div>
             <div class="stat-item">
-              <div class="stat-number">∞</div>
-              <div class="stat-label">Curiosity</div>
+              <div class="stat-number">2027</div>
+              <div class="stat-label">Graduating</div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EDUCATION & RESUME SECTION ===================== -->
+  <section class="section education" id="education">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">Education & Resume</h2>
+        <p class="section-subtitle">Academic qualifications and recruiter-ready credentials.</p>
+      </div>
+
+      <div class="education-grid">
+        <!-- Education Card -->
+        <div class="edu-card fade-in-left">
+          <div class="edu-card-header">
+            <div class="edu-icon">🎓</div>
+            <div>
+              <span class="edu-badge">Undergraduate Degree</span>
+              <h3 class="edu-degree">B.Tech in Computer Science & Engineering</h3>
+              <p class="edu-spec">Specialization in Data Science & Artificial Intelligence</p>
+            </div>
+          </div>
+          <div class="edu-meta">
+            <span class="edu-meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              Graduation: 2027 (4th Year)
+            </span>
+            <span class="edu-meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              Focus: Full Stack & Software Development
+            </span>
+          </div>
+          <div class="edu-coursework">
+            <h4>Key Coursework:</h4>
+            <div class="coursework-tags">
+              <span class="cw-tag">Data Structures & Algorithms</span>
+              <span class="cw-tag">Full Stack Web Dev</span>
+              <span class="cw-tag">Database Management (DBMS)</span>
+              <span class="cw-tag">Object-Oriented Programming (OOP)</span>
+              <span class="cw-tag">Operating Systems</span>
+              <span class="cw-tag">Machine Learning & AI</span>
+              <span class="cw-tag">Software Engineering</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Resume Action Card -->
+        <div class="resume-cta-card fade-in-right">
+          <div class="resume-cta-content">
+            <div class="resume-icon-badge">📄</div>
+            <h3>Recruiter Fast Track</h3>
+            <p>
+              Looking for a comprehensive breakdown of my projects, hackathon achievements, 
+              technical skills, and academic background?
+            </p>
+            <div class="resume-actions">
+              <a href="assets/Shruthi_TH_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-primary" id="previewResumeBtn">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                <span>Preview Resume</span>
+              </a>
+              <a href="assets/Shruthi_TH_Resume.pdf" download="Shruthi_TH_Resume.pdf" class="btn-secondary" id="downloadResumeBtn">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Download Resume</span>
+              </a>
+            </div>
+            <p class="resume-note">✦ Updated for 2027 &mdash; Full Stack & Software Roles</p>
           </div>
         </div>
       </div>
@@ -126,157 +260,547 @@
   <section class="section skills" id="skills">
     <div class="container">
       <div class="section-header fade-in">
-        <h2 class="section-title">My Skills</h2>
-        <p class="section-subtitle">Technologies and tools I'm learning and working with.</p>
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-subtitle">Technologies and tools I work with &mdash; organised by category.</p>
       </div>
-      <div class="skills-grid">
-        <div class="skill-card fade-in">
-          <span class="skill-icon">🌐</span>
-          <h3 class="skill-name">HTML5</h3>
-          <span class="skill-level">Confident</span>
+
+      <div class="skills-categories-grid">
+
+        <!-- Category 1: Frontend Development -->
+        <div class="skill-category-card fade-in">
+          <div class="category-header">
+            <span class="category-icon">&#127912;</span>
+            <h3 class="category-title">Frontend Development</h3>
+          </div>
+          <div class="skill-tags-list">
+            <span class="skill-pill">HTML5</span>
+            <span class="skill-pill">CSS3</span>
+            <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill">React</span>
+          </div>
         </div>
-        <div class="skill-card fade-in">
-          <span class="skill-icon">🎨</span>
-          <h3 class="skill-name">CSS3</h3>
-          <span class="skill-level">Confident</span>
+
+        <!-- Category 2: Programming -->
+        <div class="skill-category-card fade-in">
+          <div class="category-header">
+            <span class="category-icon">&#128187;</span>
+            <h3 class="category-title">Programming</h3>
+          </div>
+          <div class="skill-tags-list">
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">Java</span>
+          </div>
         </div>
-        <div class="skill-card fade-in">
-          <span class="skill-icon">⚡</span>
-          <h3 class="skill-name">JavaScript</h3>
-          <span class="skill-level">Intermediate</span>
+
+        <!-- Category 3: Database -->
+        <div class="skill-category-card fade-in">
+          <div class="category-header">
+            <span class="category-icon">&#128451;&#65039;</span>
+            <h3 class="category-title">Database</h3>
+          </div>
+          <div class="skill-tags-list">
+            <span class="skill-pill">SQL</span>
+          </div>
         </div>
-        <div class="skill-card fade-in">
-          <span class="skill-icon">📱</span>
-          <h3 class="skill-name">Responsive Design</h3>
-          <span class="skill-level">Confident</span>
+
+        <!-- Category 4: Tools & Development -->
+        <div class="skill-category-card fade-in">
+          <div class="category-header">
+            <span class="category-icon">&#128295;&#65039;</span>
+            <h3 class="category-title">Tools &amp; Development</h3>
+          </div>
+          <div class="skill-tags-list">
+            <span class="skill-pill">Git</span>
+            <span class="skill-pill">GitHub</span>
+            <span class="skill-pill">VS Code</span>
+          </div>
         </div>
-        <div class="skill-card fade-in">
-          <span class="skill-icon">🔀</span>
-          <h3 class="skill-name">Git & GitHub</h3>
-          <span class="skill-level">Intermediate</span>
+
+        <!-- Category 5: UI/UX -->
+        <div class="skill-category-card fade-in">
+          <div class="category-header">
+            <span class="category-icon">&#9999;&#65039;</span>
+            <h3 class="category-title">UI / UX</h3>
+          </div>
+          <div class="skill-tags-list">
+            <span class="skill-pill">Figma</span>
+            <span class="skill-pill">UI/UX Design</span>
+          </div>
         </div>
-        <div class="skill-card fade-in">
-          <span class="skill-icon">⚛️</span>
-          <h3 class="skill-name">React (Basics)</h3>
-          <span class="skill-level">Learning</span>
+
+        <!-- Category 6: Data & AI -->
+        <div class="skill-category-card fade-in">
+          <div class="category-header">
+            <span class="category-icon">&#128202;</span>
+            <h3 class="category-title">Data &amp; AI</h3>
+          </div>
+          <div class="skill-tags-list">
+            <span class="skill-pill">NumPy</span>
+            <span class="skill-pill">Pandas</span>
+            <span class="skill-pill">Matplotlib</span>
+            <span class="skill-pill">Power BI</span>
+          </div>
         </div>
-        <div class="skill-card fade-in">
-          <span class="skill-icon">✏️</span>
-          <h3 class="skill-name">UI/UX Fundamentals</h3>
-          <span class="skill-level">Learning</span>
-        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ===================== PROJECTS SECTION ===================== -->
+    <!-- ===================== PROJECTS SECTION ===================== -->
   <section class="section projects" id="projects">
     <div class="container">
       <div class="section-header fade-in">
-        <h2 class="section-title">My Projects</h2>
-        <p class="section-subtitle">A showcase of what I've been building and learning.</p>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Software projects, hackathon prototypes, and data analysis work.</p>
       </div>
+
+      <!-- ★ KNOW WHAT YOU KNOW — Featured Project ★ -->
+      <div class="featured-project-wrapper fade-in">
+        <div class="featured-project-card">
+          <div class="featured-badge-row">
+            <span class="featured-badge">⭐ Featured Project</span>
+            <span class="featured-type">Chrome Extension</span>
+          </div>
+          <div class="featured-project-body">
+            <div class="featured-project-left">
+              <div class="featured-icon-wrap">
+                <span class="featured-icon">🧠</span>
+              </div>
+              <div class="featured-tech-stack">
+                <h4>Tech Stack</h4>
+                <div class="featured-tech-tags">
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">HTML5</span>
+                  <span class="tech-tag">CSS3</span>
+                  <span class="tech-tag">Chrome APIs</span>
+                </div>
+              </div>
+            </div>
+            <div class="featured-project-right">
+              <h3 class="featured-project-title">Know What You Know</h3>
+              <p class="featured-project-subtitle">Interactive Browser-Based Learning &amp; Knowledge Assessment</p>
+              <p class="featured-project-desc">
+                A Chrome extension that turns your browser into an interactive learning hub.
+                Designed for self-assessment and active recall, it lets you create, edit, and delete
+                custom questions, validate answers with JavaScript logic, and receive instant
+                interactive feedback — all within a polished, dynamic UI.
+              </p>
+              <ul class="featured-features">
+                <li><span class="feature-dot"></span>Dynamic user interface with responsive design</li>
+                <li><span class="feature-dot"></span>Question creation, editing &amp; deletion</li>
+                <li><span class="feature-dot"></span>JavaScript-based answer validation engine</li>
+                <li><span class="feature-dot"></span>Interactive feedback &amp; progress tracking</li>
+                <li><span class="feature-dot"></span>Question management system</li>
+              </ul>
+              <div class="featured-project-links">
+                <!-- Add real GitHub repo URL below when available -->
+                <!-- <a href="YOUR_GITHUB_URL" target="_blank" rel="noopener noreferrer" class="project-btn code-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg><span>GitHub</span></a> -->
+                <a href="#contact" class="project-btn demo-btn"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg><span>Get in Touch</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="projects-grid">
 
-        <!-- Project 1 -->
+        <!-- Project 1: Smart Bus Crowd Analysis Intelligence -->
         <div class="project-card fade-in">
           <div class="project-thumbnail">
-            <div class="project-thumbnail-bg gradient-1">🖥️</div>
-          </div>
-          <div class="project-info">
-            <h3 class="project-title">Responsive Landing Page</h3>
-            <p class="project-description">A fully responsive landing page designed with a mobile-first approach,
-              featuring clean layouts and smooth interactions.</p>
-            <div class="project-tech">
-              <span class="tech-tag">HTML5</span>
-              <span class="tech-tag">CSS3</span>
-              <span class="tech-tag">Responsive</span>
+            <div class="project-thumbnail-bg gradient-3">
+              <span class="thumb-icon">&#128652;</span>
             </div>
-          </div>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="project-card fade-in">
-          <div class="project-thumbnail">
-            <div class="project-thumbnail-bg gradient-2">✅</div>
+            <span class="project-badge">AI Prototype</span>
           </div>
           <div class="project-info">
-            <h3 class="project-title">To-Do List App</h3>
-            <p class="project-description">An interactive to-do list application with add, delete, and mark-complete
-              functionality, built with vanilla JavaScript.</p>
-            <div class="project-tech">
-              <span class="tech-tag">HTML5</span>
-              <span class="tech-tag">CSS3</span>
-              <span class="tech-tag">JavaScript</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="project-card fade-in">
-          <div class="project-thumbnail">
-            <div class="project-thumbnail-bg gradient-3">🤖</div>
-          </div>
-          <div class="project-info">
-            <h3 class="project-title">SIH — AI Career Path Generator</h3>
-            <p class="project-description">A Smart India Hackathon project that uses AI to generate personalized career
-              paths based on user interests and skills.</p>
+            <div class="project-category">AI &amp; Computer Vision</div>
+            <h3 class="project-title">Smart Bus Crowd Intelligence</h3>
+            <p class="project-description">
+              An AI-based smart transportation prototype that analyses bus crowd levels from camera images or video
+              and provides crowd status with alternative route suggestions.
+            </p>
             <div class="project-tech">
               <span class="tech-tag">Python</span>
-              <span class="tech-tag">AI/ML</span>
-              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">YOLO</span>
+              <span class="tech-tag">Computer Vision</span>
+              <span class="tech-tag">AI</span>
+              <span class="tech-tag">Web Development</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/SHRUTHIHARIKRISH" target="_blank" rel="noopener noreferrer" class="project-btn code-btn" title="View Source Code on GitHub">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>Code</span>
+              </a>
+              <a href="#contact" class="project-btn demo-btn" title="Project Details">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Details</span>
+              </a>
             </div>
           </div>
         </div>
 
-        <!-- Project 4 -->
+        <!-- Project 2: HR Portal UI/UX -->
         <div class="project-card fade-in">
           <div class="project-thumbnail">
-            <div class="project-thumbnail-bg gradient-4">🧩</div>
+            <div class="project-thumbnail-bg gradient-2">
+              <span class="thumb-icon">&#128101;</span>
+            </div>
+            <span class="project-badge">UI/UX Design</span>
           </div>
           <div class="project-info">
-            <h3 class="project-title">Chrome Extension: KNOW WHAT YOU KNOW</h3>
-            <p class="project-description">A Chrome extension designed to help users track and reinforce their learning
-              by organizing knowledge effectively.</p>
+            <div class="project-category">UI/UX &amp; Product Design</div>
+            <h3 class="project-title">HR Portal &#8212; UI/UX Design</h3>
+            <p class="project-description">
+              A comprehensive HR portal UI/UX design with intuitive dashboards, employee management
+              interfaces, and user-friendly workflows for human resource operations.
+            </p>
             <div class="project-tech">
-              <span class="tech-tag">JavaScript</span>
-              <span class="tech-tag">Chrome APIs</span>
-              <span class="tech-tag">HTML/CSS</span>
+              <span class="tech-tag">Figma</span>
+              <span class="tech-tag">UI/UX Design</span>
+              <span class="tech-tag">Prototyping</span>
+              <span class="tech-tag">Wireframing</span>
+            </div>
+            <div class="project-links">
+              <a href="#contact" class="project-btn demo-btn" title="Project Details">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Details</span>
+              </a>
             </div>
           </div>
         </div>
 
-        <!-- Project 5 -->
+        <!-- Project 3: Personal Portfolio Website -->
         <div class="project-card fade-in">
           <div class="project-thumbnail">
-            <div class="project-thumbnail-bg gradient-5">🧮</div>
+            <div class="project-thumbnail-bg gradient-1">
+              <span class="thumb-icon">&#127760;</span>
+            </div>
+            <span class="project-badge">Portfolio</span>
           </div>
           <div class="project-info">
-            <h3 class="project-title">Simple Calculator</h3>
-            <p class="project-description">A clean, functional calculator with a modern UI, supporting basic arithmetic
-              operations with real-time results.</p>
+            <div class="project-category">Web Development</div>
+            <h3 class="project-title">Personal Portfolio Website</h3>
+            <p class="project-description">
+              ShruthiVerse — this portfolio website. A dark/space-themed, fully responsive portfolio
+              built from scratch showcasing projects, skills, and experience with smooth animations.
+            </p>
             <div class="project-tech">
               <span class="tech-tag">HTML5</span>
               <span class="tech-tag">CSS3</span>
               <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Responsive Design</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/SHRUTHIHARIKRISH" target="_blank" rel="noopener noreferrer" class="project-btn code-btn" title="View Source Code on GitHub">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>Code</span>
+              </a>
+              <a href="#contact" class="project-btn demo-btn" title="Project Details">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Details</span>
+              </a>
             </div>
           </div>
         </div>
 
-        <!-- Project 6 -->
+        <!-- Project 4: PMUY AI Government Scheme Guide -->
         <div class="project-card fade-in">
           <div class="project-thumbnail">
-            <div class="project-thumbnail-bg gradient-6">📋</div>
+            <div class="project-thumbnail-bg gradient-4">
+              <span class="thumb-icon">&#127981;</span>
+            </div>
+            <span class="project-badge">Hackathon &#8212; HackArena / Hack2Skill</span>
           </div>
           <div class="project-info">
-            <h3 class="project-title">Form Validation Project</h3>
-            <p class="project-description">A real-time form validation system with custom error messages, regex
-              patterns, and visual feedback for each input field.</p>
+            <div class="project-category">Web Application &amp; UI/UX</div>
+            <h3 class="project-title">PMUY &#8212; AI Government Scheme Guide</h3>
+            <p class="project-description">
+              A multilingual web prototype that simplifies access to the Pradhan Mantri Ujjwala Yojana,
+              guiding users through the application process with regional-language assistance and document guidance.
+            </p>
             <div class="project-tech">
-              <span class="tech-tag">HTML5</span>
-              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">UI/UX</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/SHRUTHIHARIKRISH" target="_blank" rel="noopener noreferrer" class="project-btn code-btn" title="View Source Code on GitHub">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>Code</span>
+              </a>
+              <a href="#contact" class="project-btn demo-btn" title="Project Details">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Details</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Rapido vs Meter Auto Fare Analysis -->
+        <div class="project-card fade-in">
+          <div class="project-thumbnail">
+            <div class="project-thumbnail-bg gradient-1">
+              <span class="thumb-icon">&#128202;</span>
+            </div>
+            <span class="project-badge">Data Analysis</span>
+          </div>
+          <div class="project-info">
+            <div class="project-category">Data Analysis &amp; Visualisation</div>
+            <h3 class="project-title">Rapido vs Meter Auto Fare Analysis</h3>
+            <p class="project-description">
+              A data analysis project comparing Rapido auto fares against traditional meter auto fares across
+              Bangalore routes, using Python data libraries to uncover pricing patterns and visualise findings.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">Matplotlib</span>
+              <span class="tech-tag">NumPy</span>
+              <span class="tech-tag">Data Analysis</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/SHRUTHIHARIKRISH" target="_blank" rel="noopener noreferrer" class="project-btn code-btn" title="View Source Code on GitHub">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>Code</span>
+              </a>
+              <a href="#contact" class="project-btn demo-btn" title="Project Details">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Details</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- ===================== WEB PROJECTS SECTION ===================== -->
+  <section class="section webprojects" id="webprojects">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">Web Development Projects</h2>
+        <p class="section-subtitle">Responsive websites built for practical and business use.</p>
+      </div>
+
+      <div class="webprojects-grid">
+
+        <!-- Web Project 1: RESTAURANTI -->
+        <div class="webproject-card fade-in">
+          <div class="webproject-preview gradient-restauranti">
+            <div class="webproject-preview-inner">
+              <div class="browser-bar">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+                <span class="browser-url">restauranti.local</span>
+              </div>
+              <div class="preview-content-mock">
+                <div class="mock-hero-bar"></div>
+                <div class="mock-nav-row">
+                  <div class="mock-block short"></div>
+                  <div class="mock-block short"></div>
+                  <div class="mock-block short"></div>
+                </div>
+                <div class="mock-card-row">
+                  <div class="mock-img-block"></div>
+                  <div class="mock-img-block"></div>
+                  <div class="mock-img-block"></div>
+                </div>
+              </div>
+            </div>
+            <span class="webproject-type-label">Local Restaurant Website</span>
+          </div>
+          <div class="webproject-info">
+            <h3 class="webproject-title">RESTAURANTI</h3>
+            <p class="webproject-description">
+              A responsive restaurant website focused on menu presentation and dine-in reservation
+              functionality, integrated with Google Apps Script and Google Sheets for form handling.
+            </p>
+            <div class="webproject-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Google Apps Script</span>
+              <span class="tech-tag">Google Sheets</span>
+            </div>
+            <div class="webproject-links">
+              <a href="https://github.com/SHRUTHIHARIKRISH" target="_blank" rel="noopener noreferrer" class="project-btn code-btn" title="View Source Code">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>Code</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web Project 2: JASWANT ELECTRONICS -->
+        <div class="webproject-card fade-in">
+          <div class="webproject-preview gradient-electronics">
+            <div class="webproject-preview-inner">
+              <div class="browser-bar">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+                <span class="browser-url">jaswantelectronics.local</span>
+              </div>
+              <div class="preview-content-mock">
+                <div class="mock-hero-bar alt"></div>
+                <div class="mock-nav-row">
+                  <div class="mock-block short"></div>
+                  <div class="mock-block short"></div>
+                  <div class="mock-block short"></div>
+                </div>
+                <div class="mock-card-row">
+                  <div class="mock-img-block"></div>
+                  <div class="mock-img-block"></div>
+                  <div class="mock-img-block"></div>
+                </div>
+              </div>
+            </div>
+            <span class="webproject-type-label">Electronics Service Business Website</span>
+          </div>
+          <div class="webproject-info">
+            <h3 class="webproject-title">JASWANT ELECTRONICS</h3>
+            <p class="webproject-description">
+              A business website concept designed to showcase electronics repair services, products
+              and customer contact information for a local electronics service provider.
+            </p>
+            <div class="webproject-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
               <span class="tech-tag">JavaScript</span>
             </div>
+            <div class="webproject-links">
+              <a href="https://github.com/SHRUTHIHARIKRISH" target="_blank" rel="noopener noreferrer" class="project-btn code-btn" title="View Source Code">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>Code</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- ===================== EXPERIENCE SECTION ===================== -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">Experience</h2>
+        <p class="section-subtitle">Professional internship and hands-on industry exposure.</p>
+      </div>
+
+      <div class="experience-timeline">
+
+        <!-- Experience Card: Tech Star Group -->
+        <div class="exp-card fade-in">
+          <div class="exp-timeline-dot"></div>
+          <div class="exp-content">
+            <div class="exp-header">
+              <div class="exp-header-left">
+                <h3 class="exp-role">UI/UX Designer</h3>
+                <div class="exp-company">Tech Star Group</div>
+              </div>
+              <div class="exp-meta">
+                <span class="exp-type-badge">Internship</span>
+              </div>
+            </div>
+            <p class="exp-description">
+              Contributed to UI/UX design tasks as part of an internship engagement, working on designing
+              user interfaces and digital experiences for software products.
+            </p>
+            <div class="exp-tags">
+              <span class="exp-tag">UI/UX Design</span>
+              <span class="exp-tag">Figma</span>
+              <span class="exp-tag">User Interface Design</span>
+              <span class="exp-tag">Digital Experience</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- ===================== CERTIFICATIONS SECTION ===================== -->
+  <section class="section certifications" id="certifications">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">Certifications</h2>
+        <p class="section-subtitle">Professional certifications and learning milestones.</p>
+      </div>
+      <div class="certifications-grid">
+
+        <!-- Cert 1: IBM Python -->
+        <div class="cert-card fade-in">
+          <div class="cert-icon-wrap">🐍</div>
+          <div class="cert-info">
+            <h3 class="cert-name">Introduction to Python</h3>
+            <div class="cert-issuer">IBM</div>
+            <div class="cert-date">October 2024</div>
+          </div>
+          <!-- Add cert URL here when available: <a href="YOUR_CERT_URL" target="_blank" rel="noopener noreferrer" class="cert-verify-btn">View Certificate</a> -->
+        </div>
+
+        <!-- Cert 2: IBM Java -->
+        <div class="cert-card fade-in">
+          <div class="cert-icon-wrap">☕</div>
+          <div class="cert-info">
+            <h3 class="cert-name">Introduction to Java</h3>
+            <div class="cert-issuer">IBM</div>
+            <div class="cert-date">October 2024</div>
+          </div>
+        </div>
+
+        <!-- Cert 3: Anthropic Claude API -->
+        <div class="cert-card fade-in">
+          <div class="cert-icon-wrap">🤖</div>
+          <div class="cert-info">
+            <h3 class="cert-name">Claude with the Anthropic API</h3>
+            <div class="cert-issuer">Anthropic</div>
+            <div class="cert-date">March 2026</div>
+          </div>
+        </div>
+
+        <!-- Cert 4: Accenture Forage -->
+        <div class="cert-card fade-in">
+          <div class="cert-icon-wrap">📊</div>
+          <div class="cert-info">
+            <h3 class="cert-name">Data Analytics and Visualization Job Simulation</h3>
+            <div class="cert-issuer">Accenture North America (Forage)</div>
+            <div class="cert-date">April 2025</div>
+          </div>
+        </div>
+
+        <!-- Cert 5: Corizo Data Science -->
+        <div class="cert-card fade-in">
+          <div class="cert-icon-wrap">🔬</div>
+          <div class="cert-info">
+            <h3 class="cert-name">Data Science Internship Training</h3>
+            <div class="cert-issuer">Corizo Edutech (Wipro DICE)</div>
+            <div class="cert-date">October 2024</div>
+          </div>
+        </div>
+
+        <!-- Cert 6: HCL GUVI ChatGPT -->
+        <div class="cert-card fade-in">
+          <div class="cert-icon-wrap">💬</div>
+          <div class="cert-info">
+            <h3 class="cert-name">ChatGPT for Everyone</h3>
+            <div class="cert-issuer">HCL GUVI</div>
+            <div class="cert-date">December 2025</div>
+          </div>
+        </div>
+
+        <!-- Cert 7: Tech Star Group UI/UX Internship -->
+        <div class="cert-card fade-in">
+          <div class="cert-icon-wrap">🎨</div>
+          <div class="cert-info">
+            <h3 class="cert-name">UI/UX Designer Internship</h3>
+            <div class="cert-issuer">Tech Star Group</div>
+            <div class="cert-date"></div>
           </div>
         </div>
 
@@ -288,42 +812,66 @@
   <section class="section contact" id="contact">
     <div class="container">
       <div class="section-header fade-in">
-        <h2 class="section-title">Get In Touch</h2>
-        <p class="section-subtitle">Have a question or want to work together? Drop me a message!</p>
+        <h2 class="section-title">Let's Build Something Together</h2>
+        <p class="section-subtitle">I'm open to software development, web development, internship and fresher opportunities.</p>
       </div>
+
       <div class="contact-wrapper">
+
+        <!-- Left: Info panel -->
         <div class="contact-info fade-in-left">
-          <h3>Let's Connect 🚀</h3>
-          <p>
-            I'm always open to discussing new projects, creative ideas, or opportunities to grow and learn. Feel free to
-            reach out through the form or connect with me on social media!
-          </p>
-          <div class="social-links">
-            <a href="https://github.com/SHRUTHIHARIKRISH" target="_blank" rel="noopener noreferrer" class="social-link"
-              aria-label="GitHub" id="githubLink">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+
+          <div class="contact-reach-heading">Reach out directly</div>
+
+          <!-- Email -->
+          <a href="mailto:shrutiharikrishnan29@gmail.com" class="contact-info-card" id="emailContactCard" title="Send Email">
+            <div class="contact-info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
               </svg>
-            </a>
-            <a href="https://www.linkedin.com/in/shruthi-harikrishnan29" target="_blank" rel="noopener noreferrer"
-              class="social-link" aria-label="LinkedIn" id="linkedinLink">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-                <path
-                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </div>
+            <div class="contact-info-text">
+              <span class="contact-info-label">Email</span>
+              <span class="contact-info-value">shrutiharikrishnan29@gmail.com</span>
+            </div>
+            <svg class="contact-info-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+
+          <!-- GitHub -->
+          <a href="https://github.com/SHRUTHIHARIKRISH" target="_blank" rel="noopener noreferrer" class="contact-info-card" id="githubContactCard" title="GitHub Profile">
+            <div class="contact-info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
               </svg>
-            </a>
-          </div>
-          <div class="contact-email">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="4" width="20" height="16" rx="2" />
-              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-            </svg>
-            <a href="mailto:shrutiharikrishnan29@gmail.com">shrutiharikrishnan29@gmail.com</a>
-          </div>
+            </div>
+            <div class="contact-info-text">
+              <span class="contact-info-label">GitHub</span>
+              <span class="contact-info-value">github.com/SHRUTHIHARIKRISH</span>
+            </div>
+            <svg class="contact-info-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/shruthi-harikrishnan29" target="_blank" rel="noopener noreferrer" class="contact-info-card" id="linkedinContactCard" title="LinkedIn Profile">
+            <div class="contact-info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </div>
+            <div class="contact-info-text">
+              <span class="contact-info-label">LinkedIn</span>
+              <span class="contact-info-value">linkedin.com/in/shruthi-harikrishnan29</span>
+            </div>
+            <svg class="contact-info-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+
         </div>
+
+        <!-- Right: Contact form -->
         <div class="contact-form-card fade-in-right">
+          <div class="form-card-heading">Send a message</div>
+          <p class="form-card-note">Fill out the form and I'll get back to you as soon as possible.</p>
           <form id="contactForm">
             <div class="form-group">
               <label for="name">Full Name</label>
@@ -335,18 +883,18 @@
             </div>
             <div class="form-group">
               <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+              <textarea id="message" name="message" rows="5" placeholder="Hi Shruthi, I'd love to connect regarding..." required></textarea>
             </div>
             <button type="submit" class="btn-primary form-submit" id="submitBtn">
               <span>Send Message</span>
-              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" viewBox="0 0 24 24">
-                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
               </svg>
             </button>
             <div class="form-message" id="formMessage"></div>
           </form>
         </div>
+
       </div>
     </div>
   </section>
@@ -354,9 +902,8 @@
   <!-- ===================== FOOTER ===================== -->
   <footer class="footer">
     <div class="container">
-      <p>Built with <span class="heart">♥</span> by Shruthi &copy; 2026 — ShruthiVerse</p>
+      <p>Built with <span class="heart">♥</span> by Shruthi Harikrishnan &copy; 2026 — ShruthiVerse</p>
       <p class="footer-email">📧 <a href="mailto:shrutiharikrishnan29@gmail.com">shrutiharikrishnan29@gmail.com</a></p>
-      <p class="footer-auth">Authenticated with Google via Supabase</p>
     </div>
   </footer>
 
@@ -365,4 +912,4 @@
   <script src="js/main.js"></script>
 </body>
 
-</html>
+</html>
